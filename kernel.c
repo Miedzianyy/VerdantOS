@@ -76,9 +76,9 @@ void terminal_writestring(const char* data) {
 void kernel_main(void) {
     terminal_initialize();
     
-    terminal_writestring("=== Witaj w VerdantOS (Build 102) ===\n");
-    terminal_writestring("Inicjalizacja monolityczna... [OK]\n");
-    terminal_writestring("System plikow: FAT16 (szkielet gotowy)\n\n");
+    terminal_writestring("=== Welcome to VerdantOS! ===\n");
+    terminal_writestring("OS Version: VerdantOS x86 Build 103-BETA\n");
+    terminal_writestring("Filesystem: FAT16\n\n");
 
     shell_run();
 }
