@@ -78,7 +78,7 @@ msg: db 'FASM BINARIES WORK TOO!', 0
 Since you don't have a standard output stream, you write directly to the hardware video memory located at 0xB8000.
 - **Screen Layout**: 80x25
 - **CELL FORMAT**:
-Each Screen Cell is 2 Bits.
+Each Screen Cell is 2 Bytes.
 Bit 1 is The ASCII Character, Bit 2 is Color Value (For example: `0x0F` is White text on black background)
 - **MATH**: To move to the next character on the screen, increment your video pointer (EDI) by **2**.
 ### SCREEN CLEANING
