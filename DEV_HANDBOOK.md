@@ -142,6 +142,9 @@ hang:
 
 msg: db 'VERDANTOS YASM BINARY ACTIVE!', 0
 ```
+
+### Warning!
+If you want to make your program EXITABLE (via Shift+Esc), DO NOT use `cli` in it's code.
 ### Compiling and Running
 MAKE SURE THAT YOU HAVE ALREADY DONE `make setfs` BECAUSE YOU'LL NEED A HDA
 You need to compile your program to a RAW binary
