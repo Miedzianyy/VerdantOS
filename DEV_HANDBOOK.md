@@ -22,7 +22,7 @@ Because your binary is loaded dynamically by the CLI from the FAT16 filesystem i
 If you reference a string like `msg: db "Hello", 0`, the assembler calculates its offset from the start of the file (e.g., `0x1A`), not its physical address in RAM.
 ### Solution:
 ### The get_eip trick.
-To find out where your code actually landed in memory, use this standard position-independent bootstrap at the start of your program:
+To find out where your code actually landed in memory, use this standard position-independent bootstrap at the start of your program (idk why but some comments in the code is in polish, but I'm too lazy to translate them):
 YASM/NASM:
 ```
 [bits 32]
